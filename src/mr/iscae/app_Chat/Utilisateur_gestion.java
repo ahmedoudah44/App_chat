@@ -29,7 +29,7 @@ public class Utilisateur_gestion {
       
 	}
 
-	// information de utilisateur nouveu
+	// information de utilisateur nouveul 
 	public static class info_utilisateur {
 		String Nom;
 		String email;
@@ -37,7 +37,7 @@ public class Utilisateur_gestion {
 
 	}
 
-	// Data de utilisateur
+	// Data de utilisateur 
 	public static class Data_utlisateur {
 		Integer id;
 		info_utilisateur info_utilisateur;
