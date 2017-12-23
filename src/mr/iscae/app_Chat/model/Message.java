@@ -2,6 +2,11 @@ package mr.iscae.app_Chat.model;
 
 import java.util.Date;
 
+import sun.rmi.runtime.Log;
+
+
+
+
 public class Message {
  
 	private long id;
@@ -18,6 +23,8 @@ public class Message {
 		this.creatdate = creatdate;
 		this.auther = auther;
 	}
+	
+	
 	public long getId() {
 		return id;
 	}

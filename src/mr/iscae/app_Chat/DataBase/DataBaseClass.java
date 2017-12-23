@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import mr.iscae.app_Chat.model.*;
-import sun.rmi.runtime.Log;
+
 
 
 
@@ -12,14 +12,14 @@ import sun.rmi.runtime.Log;
 
 public class DataBaseClass {
 
-	private static Map<Log, Message> messages= new HashMap<>();
-	private static Map<Log, Profile> profiles= new HashMap<>();
+	private static Map<Long, Message> messages= new HashMap<>();
+	private static Map<Long, Profile> profiles= new HashMap<>();
 	
-	public static Map<Log, Message> getMessages(){
+	public static Map<Long, Message> getMessages(){
 		return messages;
 	}
 	
-	public static Map<Log, Profile>  getProfile(){
+	public static Map<Long, Profile>  getProfile(){
 		
 		return profiles;
 	}
