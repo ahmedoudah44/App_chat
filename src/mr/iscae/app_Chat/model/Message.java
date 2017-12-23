@@ -2,7 +2,6 @@ package mr.iscae.app_Chat.model;
 
 import java.util.Date;
 
-import sun.rmi.runtime.Log;
 
 
 

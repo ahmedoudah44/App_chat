@@ -9,10 +9,14 @@ import mr.iscae.app_Chat.model.Message;
 
 
 public class MessageService {
-
+   
 	private static Map<Long, Message> messages= DataBaseClass.getMessages();
 
-	public List<Message> getToutMessage(long id){
+	
+	
+
+	
+	public List<Message> getToutMessage(){
 		
 		return new ArrayList<Message>(messages.values());
 		
