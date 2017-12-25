@@ -12,13 +12,13 @@ public class Profile {
 	public Profile() {
 		// TODO Auto-generated constructor stub
 	}
-	public Profile(long id, String proFileNom, String nom, String email, Date creatdate) {
+	public Profile(long id, String proFileNom, String nom, String email) {
 		super();
 		this.id = id;
 		this.proFileNom = proFileNom;
 		this.nom = nom;
 		this.email = email;
-		this.creatdate = creatdate;
+		this.creatdate = new Date();
 	}
 	public long getId() {
 		return id;

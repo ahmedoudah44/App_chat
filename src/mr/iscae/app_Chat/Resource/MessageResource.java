@@ -3,6 +3,7 @@ package mr.iscae.app_Chat.Resource;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -32,8 +33,16 @@ public class MessageResource {
   @PUT
   @Path("/{messageId}")
   @Consumes(MediaType.APPLICATION_JSON)
-  public Message updateMasseges(Message message){
+  public Message updateMasseges(@PathParam("messageId") long id,Message message){
+	 message.setId(id);
 	  return messageservice.updateMessage(message);
+  }
+ 
+  @DELETE
+  @Path("/{messageId}")
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Message deletMasseges(@PathParam("messageId") long id){	 
+	  return messageservice.delateMessage(id);
   }
   
   @GET

@@ -10,16 +10,23 @@ public class Message {
  
 	private long id;
 	private String message;
-	private Date creatdate;
+	
+	private Date datecreation =new Date();;
+	private String creatdatetosring;
 	private String auther;
 	public Message() {
-		// TODO Auto-generated constructor stub
+		
+		this.creatdatetosring=datecreation.toGMTString();
+		//this.creatdate = new Date();
 	}
-	public Message(long id, String message, Date creatdate, String auther) {
-		super();
+	public Message(long id, String message, String auther) {
+		
 		this.id = id;
 		this.message = message;
-		this.creatdate = creatdate;
+		
+		this.creatdatetosring=datecreation.toGMTString();
+		//this.creatdate = new Date();
+		System.out.println(creatdatetosring);
 		this.auther = auther;
 	}
 	
@@ -36,11 +43,11 @@ public class Message {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	public Date getCreatdate() {
-		return creatdate;
+	public String getCreatdate() {
+		return creatdatetosring;
 	}
-	public void setCreatdate(Date creatdate) {
-		this.creatdate = creatdate;
+	public void setCreatdate(String creatdate) {
+		this.creatdatetosring = creatdate;
 	}
 	public String getAuther() {
 		return auther;
