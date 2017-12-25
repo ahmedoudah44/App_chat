@@ -11,7 +11,7 @@ public class Message {
 	private long id;
 	private String message;
 	
-	private Date datecreation =new Date();;
+	private Date datecreation =new Date();
 	private String creatdatetosring;
 	private String auther;
 	public Message() {

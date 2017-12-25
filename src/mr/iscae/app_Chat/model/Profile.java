@@ -1,6 +1,6 @@
 package mr.iscae.app_Chat.model;
 
-import java.util.Date;
+
 
 public class Profile {
 
@@ -8,9 +8,9 @@ public class Profile {
 	private String proFileNom;
 	private String nom;
 	private String email;
-	private Date creatdate;
 	public Profile() {
-		// TODO Auto-generated constructor stub
+		
+		
 	}
 	public Profile(long id, String proFileNom, String nom, String email) {
 		super();
@@ -18,7 +18,7 @@ public class Profile {
 		this.proFileNom = proFileNom;
 		this.nom = nom;
 		this.email = email;
-		this.creatdate = new Date();
+		
 	}
 	public long getId() {
 		return id;
@@ -44,11 +44,6 @@ public class Profile {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Date getCreatdate() {
-		return creatdate;
-	}
-	public void setCreatdate(Date creatdate) {
-		this.creatdate = creatdate;
-	} 
+ 
 	
 }

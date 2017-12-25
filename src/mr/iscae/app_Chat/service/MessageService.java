@@ -28,14 +28,14 @@ public class MessageService {
 	}
 
 	public Message updateMessage(Message message) {
-		if (message.getId() == 0) {
+		if (message.getId() <= 0) {
 			return null;
 		}
 		messages.put(message.getId(), message);
 		return message;
 	}
 
-	public Message delateMessage(long id) {
-		return messages.remove(id);
+	public void delateMessage(long id) {
+		 messages.remove(id);
 	}
 }

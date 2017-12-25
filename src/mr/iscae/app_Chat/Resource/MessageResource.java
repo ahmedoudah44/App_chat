@@ -41,8 +41,8 @@ public class MessageResource {
   @DELETE
   @Path("/{messageId}")
   @Consumes(MediaType.APPLICATION_JSON)
-  public Message deletMasseges(@PathParam("messageId") long id){	 
-	  return messageservice.delateMessage(id);
+  public void deletMasseges(@PathParam("messageId") long id){	 
+	   messageservice.delateMessage(id);
   }
   
   @GET
